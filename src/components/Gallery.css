@@ -1,0 +1,43 @@
+#gallery {
+  background: #f1f8f4;
+  padding: 10% 0px;
+}
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.img-container img {
+  width: 100%;
+}
+.img-container {
+  position: relative;
+}
+.top {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  color: #274c5b;
+  font-weight: 700;
+}
+@media (max-width:768px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-container {
+    position: relative;
+  }
+  .top {
+    left: 35%;
+  }
+}
+@media (max-width:500px) {
+  .top {
+    left: 25%;
+  }
+}

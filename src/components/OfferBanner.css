@@ -1,0 +1,48 @@
+.offer-container {
+  width: 80%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.offer1 img,
+.offer2 img {
+  width: 100%;
+}
+.offer1 {
+  position: relative;
+  text-align: left;
+  color: #fff;
+}
+.offer2 {
+  position: relative;
+  text-align: left;
+  color: #274c5b;
+}
+.text {
+  position: absolute;
+  width: 40%;
+  top: 30%;
+  left: 32px;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .offer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 32px;
+  }
+  
+}
+@media (max-width:500px) {
+  .text {
+    position: absolute;
+    width: 70%;
+  }
+
+}

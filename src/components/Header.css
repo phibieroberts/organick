@@ -1,0 +1,142 @@
+.header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 0px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+.header-items {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 50px;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu{
+  display: none;
+}
+.logo-area .nav a {
+  text-decoration: none;
+  margin: 0px 10px;
+  color: #274c5b;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #274c5b;
+}
+.search-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-cart img{
+  width: 50px;
+}
+.search {
+  background: #fafafa;
+  height: 50px;
+  width: 65%;
+  border-radius: 36px;
+  display: flex;
+}
+input {
+  background: #fafafa;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+}
+.cart {
+  display: flex;
+  background: #fafafa;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 33px;
+  width: 30%;
+  align-items: center;
+  height: 50px;
+}
+
+.cart span {
+  margin-left: 10px;
+}
+.search-cart input { 
+  width: 80%;
+  border-radius: 36px;
+  border-color: none;
+  border: none;
+  margin: 0px 40px;
+}
+ img{
+    cursor: pointer;
+ }
+ @media screen and (max-width: 768px) {
+  .logo-area img{
+    width: 150px;
+  }
+  .header-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+ .menu{
+  display: flex;
+  font-size: 26px;
+  color: #274c5b;
+
+ }
+ .nav{
+  display: none;
+ }
+
+ .open{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  width: 50%;
+  right: 0;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+
+
+}
+ .nav.open a{
+  color: #274c5b;
+  margin: 10px;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+
+ }
+ .search-cart{
+  height: 40px;
+  width: 100%;
+  border-radius: 36px;
+  display: flex;
+
+ }
+ .search{
+ }
+
+ .search img{
+width: 100px;
+ }
+ .cart{
+
+ }
+
+}
+
+
+ 

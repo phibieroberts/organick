@@ -1,0 +1,45 @@
+#hero {
+  background-image: url("../images/bg.svg"), url("../images/Image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 24%;
+  margin-left: 13%;
+}
+.intro h3 {
+  margin-top: 60px;
+}
+.intro button {
+  background: #efd372;
+  width: 150px;
+  height: 60px;
+  padding: 0;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: all 1s ease-in-out;
+  color: #274C5B;
+
+}
+.intro button:hover {
+  background-color: transparent;
+  border: 2px solid #efd372;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 50%;
+  }
+  
+}
+@media (max-width:500px) {
+  .intro {
+    width: 70%;
+  }
+
+}
