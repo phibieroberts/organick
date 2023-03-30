@@ -11,7 +11,7 @@ function Subscribe() {
             <h2>Subscribe to Our newsletter</h2>
           <div className="subscription-form">
             <input type="text" placeholder="Enter your Email" />
-            <button>Subscribe</button>
+            <button className='sub-btn '>Subscribe</button>
           </div>
           </div>
       </div> 

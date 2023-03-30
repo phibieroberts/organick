@@ -21,7 +21,7 @@ h4 {
   color: #274c5b;
 }
 p {
-  font-weight: 400;
+  font-weight: 100;
   font-size: 16px;
   line-height: 30px;
   color: #525c60;
@@ -34,6 +34,9 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+a{
+font-weight: 200;
 }
 @media (max-width:768px) {
   h1{

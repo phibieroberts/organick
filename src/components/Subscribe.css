@@ -29,8 +29,8 @@
 }
 .subscription-form button {
   width: 150px;
-  height: 50px;
-  border-radius: 12px;
+padding: 20px 30px; 
+ border-radius: 12px;
   background: #274c5b;
   outline: none;
   border: none;
@@ -43,7 +43,7 @@
 }
 @media (max-width: 768px) {
   #subscribe {
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   .sub-text {
     position: absolute;
@@ -53,9 +53,9 @@
     width: 100%;
   }
 
-  .subscription-form button {
+  button.sub-btn {
     width: 100px;
-    height: 0px !important;
+    height: 40px !important;
     border-radius: 8px;
     background: #274c5b;
     margin-left: 8px;
@@ -65,10 +65,6 @@
     font-size: 16px;
     width: 50%;
     margin-left: 40px;
-  }
-  .subscription-form {
-    display: flex;
-    flex-direction: column;
   }
   .subscription-form input{
     height: 30px;
@@ -80,4 +76,30 @@
     width: 100%;
   }
   
+}
+@media (max-width: 400px) {
+  #subscribe {
+    margin-top: 8rem;
+
+}
+.sub-text {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+.subscription-form{
+  display: flex;
+  justify-content: space-around;
+}
+.subscription-form button {
+  width: 100px;
+  height: 40px !important;
+  border-radius: 8px;
+  background: #274c5b;
+  margin-left: 8px;
+}
+.sub-text{
+  margin:0 20px;
+}
+
 }

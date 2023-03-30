@@ -26,7 +26,7 @@
   color: #274c5b;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: #274c5b;
@@ -68,6 +68,7 @@ input {
 
 .cart span {
   margin-left: 10px;
+  color: #acabab;
 }
 .search-cart input { 
   width: 80%;
@@ -97,6 +98,9 @@ input {
  .nav{
   display: none;
  }
+ .search-cart input { 
+  margin: 0px 10px;
+}
 
  .open{
   display: flex;
@@ -115,7 +119,7 @@ input {
   color: #274c5b;
   margin: 10px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 200;
   padding: 20px;
 
  }
@@ -126,17 +130,31 @@ input {
   display: flex;
 
  }
- .search{
- }
-
  .search img{
 width: 100px;
  }
- .cart{
 
- }
 
 }
 
-
+@media screen and (max-width: 500px) {
+  .cart {
+    width: 35%;
+    align-items: center;
+  }
+  .cart span{
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .cart {
+    width: 50%;
+    align-items: center;
+  }
+  .cart span{
+    font-size: 10px;
+    margin-right: 5px;
+  }
+}
  

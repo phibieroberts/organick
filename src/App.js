@@ -11,7 +11,7 @@ import Ecofriendly from './components/Ecofriendly';
 import Gallery from './components/Gallery';
 import Blog from './components/Blog';
 import Subscribe from './components/Subscribe';
-
+import ReducerSample from "./components/ReducerSample"
 function App() {
   return (
     <div className="App">
@@ -27,6 +27,7 @@ function App() {
     <Blog />
     <Subscribe />
     <Footer />
+    {/* <ReducerSample /> */}
     </div>
   );
 }
