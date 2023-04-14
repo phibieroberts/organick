@@ -1,0 +1,274 @@
+#about-banner {
+  background-image: url("../../images/backgroundpattern.svg"),
+    url("../../images/aboutbanner.png");
+  background-size: cover;
+  height: 450px;
+}
+.about {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+/* section about us */
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1600px;
+  width: 90%;
+  margin: auto;
+}
+.about-img img {
+  width: 100%;
+}
+.content {
+  margin: 0 20px;
+  padding: 40px 5px 40px 0;
+}
+.content h2 {
+  padding-right: 60%;
+  margin: 10px 0;
+}
+.content p {
+  font-size: 16px;
+  color: #525c60;
+  font-style: normal;
+  font-size: 16px;
+}
+.points {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+.point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-weight: 100;
+}
+.point h3 {
+  font-weight: 400;
+}
+button.aboutp {
+  background-color: #274c5b;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* why choose us */
+#why-choose-us{
+background: #F9F8F8;
+padding: 10% 0 3% 0;
+}
+.why-content{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.why-content p{
+    font-size: 16px;
+}
+.why-content h2{
+    padding-right: 200px;
+    margin: 5px 0;
+
+}
+img.contentimg{
+    width: 100%;
+}
+.ring-div{
+    width: 260px;
+height: 61px;
+background: #ECECEC;
+border-radius: 49px;
+display: flex;
+align-items: center;
+padding: 0 20px;
+gap: 10px;
+margin: 10px 0;
+}
+.ring-text{
+    margin:0 150px 0 20px;
+    font-size: 16px;
+}
+.reasons{
+    width: 70%;
+    margin:5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+.card h4{
+margin-bottom: 5px;
+}
+
+.reason-icon{
+    background: #F9F8F8;;
+    height: 80px;
+    width: 80px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+    margin: 10px 0;
+}
+/* the team section */
+#team{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px 10px 0px;
+}
+#team p{
+    padding: 0 100px;
+    font-size: 16px;
+word-spacing: 2px;
+}
+.team-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.team-img {
+    width: 100%;
+}
+.teamcard{
+    background: #F9F8F8;
+    border-radius: 16px;
+
+    
+}
+.teamcard:hover{
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+.team-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+}
+.role-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.team-icons{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.team-icons img{
+    width: 100%;
+}
+#aboutUs{
+    background: #274C5B;
+    padding: 12% 0;
+    text-align: center;
+    margin: 4rem 0;
+    
+}
+#aboutUs h2{
+    color: #ffffff;
+    margin: 10px 0;
+}
+.aboutUs-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.aboutUs-card{
+    color: #ffffff;
+}
+.aboutUs-card img{
+    width: 100%;
+    border-radius: 18px;
+}
+.aboutUs-card h6{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+@media (max-width:768px) {
+    #about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+
+      }
+      .about-img{
+        order: 2;
+      }
+      .about-img img {
+        width: 100%;
+      }
+      .content h2 {
+        padding-right: 0;
+        margin: 0;
+      }
+      .point {
+        gap: 10px;
+      }
+      .why-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .reasons{
+        display: grid;
+grid-template-columns: 1fr 1fr;    }
+.team-container{
+        display: flex;
+flex-direction: column;  
+  margin-top: 20px;
+}
+.team-icons{
+    margin-left: 30px;
+    gap: 5px;
+}
+
+}
+@media (max-width:500px) {
+    .why-content h2{
+        padding-right:0;
+        margin: 5px 0;
+    
+    }
+    .ring-text{
+        margin:0 ;
+        font-size: 16px;
+    }
+    
+    .reasons{
+        display: grid;
+grid-template-columns: 1fr;   
+ }
+ #team p{
+    padding: 0;
+}
+.content{
+    margin: 0;
+}
+}

@@ -1,34 +1,25 @@
 import './App.css';
+import {BrowserRouter, Routes,Route} from "react-router-dom"
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Intro from './components/Intro';
-import OfferBanner from './components/OfferBanner';
-import About from './components/About';
-import OurProducts from './components/OurProducts';
-import TestimonialOffer from './components/TestimonialOffer';
-import OfferProduct from './components/OfferProduct';
-import Ecofriendly from './components/Ecofriendly';
-import Gallery from './components/Gallery';
-import Blog from './components/Blog';
+import HomePage from './pages/HomePage';
+import AboutPage from "./pages/AboutPage";
 import Subscribe from './components/Subscribe';
-import ReducerSample from "./components/ReducerSample"
+import Shop from "./pages/Shop"
 function App() {
   return (
+    <BrowserRouter >
     <div className="App">
     <Header />
-    <Intro /> 
-     <OfferBanner />
-    <About />
-    <OurProducts />
-    <TestimonialOffer />
-    <OfferProduct />
-    <Ecofriendly />
-    <Gallery />
-    <Blog />
+    <Routes>
+    <Route path="/" element={<HomePage />} />
+<Route path='/about' element={<AboutPage />}/>
+<Route path='/shop' element={<Shop />}/>
+    </Routes>
     <Subscribe />
     <Footer />
-    {/* <ReducerSample /> */}
     </div>
+    </BrowserRouter>
   );
 }
 

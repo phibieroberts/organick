@@ -1,5 +1,6 @@
 .footer {
   width: 100%;
+  font-size: 14px;
 }
 .contact-container {
   display: grid;
@@ -16,7 +17,10 @@
   text-align: right;
   margin-right: 20px;
 }
+.footer p, a{
+  font-size: 14px;
 
+}
 .contact > div {
   margin: 10px;
 }
@@ -60,6 +64,7 @@
 .utility ul li {
   list-style-type: none;
   margin-top: 10px;
+  font-size: 14px;
 }
 .copywright {
   text-align: center;

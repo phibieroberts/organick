@@ -4,6 +4,7 @@ import logo from "../images/Logo.svg";
 import cart from "../images/Cart Icon.svg";
 import search from "../images/Search Icon.svg";
 import {FaBars, FaTimes} from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Header() {
   const[clicked, setClicked]=useState(false)
 
@@ -16,12 +17,10 @@ function Header() {
         <div className="logo-area">
           <img src={logo} alt="" />
           <div className={clicked ? "nav open" : "nav"}>
-            <a href="#about" onClick={handleClick}>Home</a>
-            <a href="#home">About</a>
-            <a href="#">Pages <span><img src="" alt="" /></span></a>
-            <a href="#">Shop</a>
-            <a href="#">Projects</a>
-            <a href="#">News</a>
+            <Link to="/" onClick={handleClick}>Home</Link>
+            <Link to="/about" >About</Link>
+            <Link to="/shop">Shop</Link>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="menu" onClick={handleClick}>
         {clicked ? <FaTimes /> : <FaBars />  } 
