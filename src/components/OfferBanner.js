@@ -1,7 +1,7 @@
 import React from "react";
 import "./OfferBanner.css";
-import Natural from "../images/offer1.svg";
-import offer from "../images/offfer2.svg";
+import Natural from "../images/offer1.png";
+import offer from "../images/offer2.png";
 
 function Offer() {
   return (

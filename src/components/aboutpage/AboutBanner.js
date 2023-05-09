@@ -1,11 +1,11 @@
 import "./AboutBanner.css";
 import React from "react";
-import aboutus from "../../images/aboutimg.svg";
+import aboutus from "../../images/aboutimg.png";
 import arrowright from "../../images/arrowright.svg";
 import point1 from "../../images/pointcar.svg";
 import point2 from "../../images/point.svg";
 import ring from "../../images/ring.svg";
-import contentimg from "../../images/contentimg.svg";
+import contentimg from "../../images/food.png";
 import icon1 from "../../images/icon1.svg";
 import icon2 from "../../images/icon2.svg";
 import icon3 from "../../images/icon3.svg";

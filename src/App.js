@@ -5,7 +5,9 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from "./pages/AboutPage";
 import Subscribe from './components/Subscribe';
-import Shop from "./pages/Shop"
+import Shoppage from "./pages/Shoppage"
+import ShopSingle from './components/shoppage/ShopSingle';
+import Contact from './components/contactpage/Contact';
 function App() {
   return (
     <BrowserRouter >
@@ -14,7 +16,10 @@ function App() {
     <Routes>
     <Route path="/" element={<HomePage />} />
 <Route path='/about' element={<AboutPage />}/>
-<Route path='/shop' element={<Shop />}/>
+<Route path='/shop' element={<Shoppage />}/>
+<Route path='/shop/:shopId' element={<ShopSingle/>}/>
+<Route path='/contact' element={<Contact/>}/>
+
     </Routes>
     <Subscribe />
     <Footer />

@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 500px;
   gap: 50px;
   align-items: center;
-  width: 90%;
+  max-width: 90%;
   margin: auto;
 }
 .logo-area {
@@ -23,10 +23,14 @@
 .nav a {
   text-decoration: none;
   color: #274c5b;
-  font-weight: 300;
-  font-family:" Roboto";
-  margin-left: 10px;
+  font-weight: 700;
+  font-family:" Roboto", sans-serif;
+  margin:0 10px;
 }
+.nav a:hover{
+  border-bottom: 2px solid #274c5b;
+}
+
 .search-cart {
   display: flex;
   justify-content: space-between;
@@ -39,7 +43,7 @@
 .search {
   background: #fafafa;
   height: 50px;
-  width: 65%;
+  max-width: 65%;
   border-radius: 36px;
   display: flex;
 }

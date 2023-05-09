@@ -1,7 +1,9 @@
 import React from "react";
-import { offerProduct } from "../products";
+import { products } from "../products";
 import "./OfferProduct.css";
 import arrowright from "../images/arrowright.svg";
+import { Link } from "react-router-dom";
+import Product from "./Product";
 function OfferProduct() {
   return (
     <div>
@@ -11,36 +13,25 @@ function OfferProduct() {
             <h3 className="stylish">Offer</h3>
             <h1>We offer Organic for you</h1>
           </div>
+          <Link to={'/shop'}>
           <button>
             View All Product <img src={arrowright} alt="" />
           </button>
+          </Link>
         </div>
         <div className="products-container">
-          {offerProduct.map((item) => {
-            return (
-              <div className="product">
-                <img src={item.imgUrl} alt={item.name} />
-                <div className="category">
-                  <div>{item.category}</div>
+          {products.map((item) => {
+            if(item.id >=9 && item.id<=12){
+              return (
+              
+                <div className="product">
+                  <Link to={`/shop/${item.id}`}>
+                  <Product item={item} />
+                  </Link>
                 </div>
-                <div className="other-details">
-                  <h4 className="name">{item.name}</h4>
-                  <div className="pricestar">
-                    <div className="price">
-                      <p className="slash">${item.slashPrice}.00</p>
-                      <b>${item.price}.00</b>
-                    </div>
-                    <div className="stars">
-                      <img src={item.star} alt="" />
-                      <img src={item.star} alt="" />
-                      <img src={item.star} alt="" />
-                      <img src={item.star} alt="" />
-                      <img src={item.star} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
+              );
+  
+            }
           })}
         </div>
       </section>

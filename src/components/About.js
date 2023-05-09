@@ -3,6 +3,7 @@ import photo from "../images/Photo.svg";
 import Group1 from "../images/Group 1.svg";
 import Group2 from "../images/Group 2.svg";
 import Arrowright from "../images/arrowright.svg";
+import { Link } from "react-router-dom";
 import "./About.css";
 
 function About() {
@@ -45,9 +46,11 @@ function About() {
               </p>
             </div>
           </div>
+          <Link to={'/shop'}>
           <button className="shop-now">
             Shop Now <img src={Arrowright} alt="" />
           </button>
+          </Link>
         </div>
       </div>
     </div>

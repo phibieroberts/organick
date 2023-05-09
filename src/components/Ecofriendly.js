@@ -1,6 +1,6 @@
 import React from "react";
 import "./Ecofriendly.css";
-import ecofriendly from "../images/ecofriendly.svg";
+import ecofriendly from "../images/ecofriendly.png";
 
 function Ecofriendly() {
   return (

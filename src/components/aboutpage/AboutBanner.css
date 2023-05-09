@@ -83,8 +83,9 @@ padding: 10% 0 3% 0;
     margin: 5px 0;
 
 }
-img.contentimg{
+img.contentimg {
     width: 100%;
+    border-radius: 16px;
 }
 .ring-div{
     width: 260px;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Gallery.css";
 import juice from "../images/juice.svg";
-import fruit from "../images/food.svg";
+import fruit from "../images/food.png";
 import nuts from "../images/cookies.svg";
 
 function Gallery() {

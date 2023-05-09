@@ -1,0 +1,6 @@
+.shop-banner{
+    background-image: url("../../images/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}

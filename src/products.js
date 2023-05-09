@@ -12,7 +12,7 @@ import haze from "./images/cucumber.svg"
 import onions from "./images/onions.svg"
 import cabbage from "./images/cabbage.svg"
 
-export const products=[
+export  const products=[
     {
         id:1,
         name:"Calabrese Broccoli",
@@ -84,11 +84,9 @@ export const products=[
         price:15.00,
         slashPrice:20.00,
         star:star
-    }
-]
-export const offerProduct=[
+    },
     {
-        id:1,
+        id:9,
         name:"Mung bean",
         category:"Vegetable",
         imgUrl:brocoli,
@@ -97,7 +95,7 @@ export const offerProduct=[
         star:star
     },
     {
-        id:2,
+        id:10,
         name:"Brown Hazelnut",
         category:"Vegetables",
         imgUrl:haze,
@@ -106,7 +104,7 @@ export const offerProduct=[
         star:star
     },
     {
-        id:3,
+        id:11,
         name:"Onions",
         category:"Vegetables",
         imgUrl:onions,
@@ -115,7 +113,7 @@ export const offerProduct=[
         star:star
     },
     {
-        id:4,
+        id:12,
         name:"Cabbage",
         category:"Vegetable",
         imgUrl:cabbage,
