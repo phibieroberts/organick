@@ -3,6 +3,7 @@
   padding: 40px 0px;
   font-family: 'Roboto', sans-serif;
   position: relative;
+  /* max-width: 1200px; */
 }
 .header-items {
   display: grid;
@@ -16,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 .menu{
   display: none;
@@ -80,6 +82,9 @@ input {
  img{
     cursor: pointer;
  }
+ @media (min-width:768) {
+  
+ }
  @media screen and (max-width: 768px) {
   .logo-area img{
     width: 150px;
@@ -130,11 +135,6 @@ input {
   display: flex;
 
  }
- .search img{
-width: 100px;
- }
-
-
 }
 
 @media screen and (max-width: 500px) {

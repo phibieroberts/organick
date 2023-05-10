@@ -29,6 +29,10 @@ section#offer {
     padding:0 10px;
     height: 40px;
   }
+  .product {
+   height: 60vh;
+  }
+  
   
 }
 @media (max-width:500px) {

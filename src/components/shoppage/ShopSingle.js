@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import "./ShopSingle.css";
 import { Link, useParams } from "react-router-dom";
 import arrowRight from "../../images/arrowright.svg"
@@ -10,12 +10,29 @@ function ShopSingle() {
   const singleProduct = products.find(
     (product) => product.id === parseInt(shopId)
   );
+// to display random products in the related product section
+  const randomProducts=[];
+  //filtering to remove the clicked product from the related items
+  const filtered=products.filter((product)=>product.id !== parseInt(shopId))
+  while(randomProducts.length < 4){
+    const randomIndex=Math.floor(Math.random()* filtered.length)
+    const randomProduct=filtered[randomIndex]
+    if(!randomProducts.includes(randomProduct)){
+      randomProducts.push(randomProduct)
+    }
+}
+//to scroll back to the details page once i click on the product in the related products section
+const shopDetailsRef=useRef(null)
+const handleRelatedProductClick=(product)=>{
+  shopDetailsRef.current.scrollIntoView({behavior:'smooth'});
+  
+  }
   return (
     <section id="shopSingle">
       <div className="shop-banner">
         <h1>Shop Single</h1>
       </div>
-      <div className="single_shop">
+      <div className="single_shop" ref={shopDetailsRef}>
         <div className="left">
           <img src={singleProduct.imgUrl} alt="product" />
           <div className="category">{singleProduct.category}</div>
@@ -43,7 +60,7 @@ function ShopSingle() {
             <label htmlFor="Quantity">Quantity: </label>
             <input type="number" id="quantity" />
             </div>
-            <button>Add to Cart <img src={arrowRight} alt="" /></button>
+            <button className="atc">Add to Cart <img src={arrowRight} alt="" /></button>
           </div>
         </div>
       </div>
@@ -62,12 +79,13 @@ function ShopSingle() {
   <h1>Related Products</h1>
   
       <div className="products-container">
-{products.map((item)=>{
-  if(item.id>=1 && item.id<=4){
-    return(
-      <Link to={`/shop/${item.id}`}><Product item={item} /></Link>
-    )
-  }
+{randomProducts.map((item)=>{
+  return(
+    <Link to={`/shop/${item.id}`} onClick={()=>handleRelatedProductClick(item)}><Product item={item} key={item.id} /></Link>
+  )
+  // if(item.id>=1 && item.id<=4){
+    
+  // }
 })}
       </div>
       </div>

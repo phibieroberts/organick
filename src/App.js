@@ -21,7 +21,7 @@ function App() {
 <Route path='/contact' element={<Contact/>}/>
 
     </Routes>
-    <Subscribe />
+    {/* <Subscribe /> */}
     <Footer />
     </div>
     </BrowserRouter>

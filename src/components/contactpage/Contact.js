@@ -81,8 +81,9 @@ function Contact() {
       <label htmlFor="message">Message</label><br/>
       <textarea name="messge" id="" cols="100" rows="10"></textarea>
     </div>
-    <button>Send Message</button>
   </form>
+  <button>Send Message</button>
+
 </div>
          
       </div>

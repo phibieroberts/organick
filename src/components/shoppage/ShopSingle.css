@@ -50,6 +50,8 @@ button{
     cursor: pointer;
   
 }
+ button.atc{
+}
 .right p{
     font-size: 16px;
     padding-right: 90px;
@@ -84,4 +86,14 @@ button.add-info{
 .stars img {
     width: 10px;
   }
-  
+  @media (max-width:768px) {
+    .single_shop{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .right p{
+        padding-right: 0px;
+    }
+        
+  }
