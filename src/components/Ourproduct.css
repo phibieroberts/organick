@@ -13,13 +13,22 @@
 .product {
   border-radius: 30px;
   position: relative;
-  height: 50vh;
+  height: 350px;
   box-shadow: 0px 20px 35px rgba(167, 167, 167, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .product img {
   width: 100%;
+  height: 100%;
   border-radius: 16px;
+  object-fit: cover;
 }
+
 .category {
   position: absolute;
   top: 20px;
@@ -31,6 +40,7 @@
   font-size: 14px;
   padding: 6px 20px;
 }
+
 .other-details {
   position: absolute;
   bottom: -10px;
@@ -41,8 +51,13 @@
 .other-details h5 {
   margin-bottom: 10px;
 }
+.product .stars{
+  display: flex;
+
+}
 .stars img {
   width: 15px;
+
 }
 
 .pricestar {
@@ -77,9 +92,6 @@ button.learn-more {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .product{
-  height: 50vh;
-  }
   .stars img {
     width: 10px;
   }
@@ -94,9 +106,5 @@ button.learn-more {
   .products-container {
     display: grid;
     grid-template-columns: 1fr
-  }
-  .product{
-    height: 60vh;
-    }
-  
+  }  
 }

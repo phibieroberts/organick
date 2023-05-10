@@ -68,6 +68,9 @@
   font-size: 16px;
   box-shadow: 0px 20px 35px rgba(167, 167, 167, 0.25);
 }
+.blog-content-area h3{
+  font-size: 16px;
+}
 .blog-content {
   margin: 10px 20px;
 }

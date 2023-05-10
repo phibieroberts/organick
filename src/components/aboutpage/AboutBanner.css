@@ -2,17 +2,12 @@
   background-image: url("../../images/backgroundpattern.svg"),
     url("../../images/aboutbanner.png");
   background-size: cover;
-  height: 450px;
-}
-.about {
-  text-align: center;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 450px;
-}
 
-/* section about us */
+}
 #about-us {
   display: grid;
   grid-template-columns: 1fr 1fr;

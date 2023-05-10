@@ -7,6 +7,9 @@ section#offer {
   background: #ffff;
   border-radius: 18px;
 }
+.product img{
+  height:fit-content;
+}
 .offer-text {
   width: 80%;
   margin: auto;
@@ -28,9 +31,6 @@ section#offer {
   .offer-text button {
     padding:0 10px;
     height: 40px;
-  }
-  .product {
-   height: 60vh;
   }
   
   
